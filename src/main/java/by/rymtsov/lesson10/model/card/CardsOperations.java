@@ -13,12 +13,12 @@ import java.util.Arrays;
 public class CardsOperations {
 
     public static int getNumberOfIdenticalCards(BaseClient client) {
-        if (client.getCards().length == 0 || client.getCards() == null) {
+        if (client.getCardsCount() == 0 || client.getCards() == null) {
             System.out.println("Client doesn't have any cards!");
             return 0;
-        } else if (client.getCards().length == 1) {
-            System.out.println("Client has only one card: " + Arrays.toString(client.getCards()));
-            return 1;
+        } else if (client.getCardsCount() == 1) {
+            System.out.println("Client has only one card!");
+            return 0;
         } else {
             int count = 0;
             for (int i = 0; i < client.getCards().length; i++) {

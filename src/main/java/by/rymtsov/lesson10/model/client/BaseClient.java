@@ -47,6 +47,10 @@ public class BaseClient {
         this.cards = cards;
     }
 
+    public void setCardsCount(int cardsCount) {
+        this.cardsCount = cardsCount;
+    }
+
     public String getName() {
         return name;
     }
@@ -55,5 +59,8 @@ public class BaseClient {
         return cards;
     }
 
+    public int getCardsCount() {
+        return cardsCount;
+    }
 
 }

@@ -27,7 +27,7 @@ public class MainApplication {
         client.addCard(new BaseCard("5678", 101, 2500));
         client.addCard(new BaseCard("1357", 200, 3000));
         client.addCard(new BaseCard("1111", 111, 2000));
-        System.out.println("Number of the identical cards: "
+        System.out.println("Number of the identical cards - "
              + CardsOperations.getNumberOfIdenticalCards(client) + '\n');
     }
 }
